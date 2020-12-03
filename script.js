@@ -2,25 +2,25 @@
 let columns__container = document.querySelector('.columns__container');
 
 const bg = [
-    "/assets/img/1color.jpg",
-    "/assets/img/2.jpg",
-    "/assets/img/3.jpg",
-    "/assets/img/4.gif",
-    "/assets/img/5.png",
-    "/assets/img/6.jpg",
-    "/assets/img/7.png",
-    "/assets/img/8.jpg"
+    "assets/img/1color.jpg",
+    "assets/img/2.jpg",
+    "assets/img/3.jpg",
+    "assets/img/4.gif",
+    "assets/img/5.png",
+    "assets/img/6.jpg",
+    "assets/img/7.png",
+    "assets/img/8.jpg"
 ]
-const bg_emotion = [
-    "/assets/img/4.jpg",
-    "/assets/img/4.jpg",
-    "/assets/img/4.jpg",
-    "/assets/img/4.jpg",
-    "/assets/img/4.jpg",
-    "/assets/img/4.jpg",
-    "/assets/img/4.jpg",
-    "/assets/img/4.jpg"
-]
+// const bg_emotion = [
+//     "/assets/img/4.jpg",
+//     "/assets/img/4.jpg",
+//     "/assets/img/4.jpg",
+//     "/assets/img/4.jpg",
+//     "/assets/img/4.jpg",
+//     "/assets/img/4.jpg",
+//     "/assets/img/4.jpg",
+//     "/assets/img/4.jpg"
+// ]
 
 const ketegory = [
     "Action (set A)",
@@ -92,7 +92,7 @@ let lock = document.querySelector('.lock');
 
 function Emotion() {
   
-    document.location.href = "/assets/Pages/Emotion.html";
+    document.location.href = "assets/Pages/Emotion.html";
 }
   
 function Clothes() {
