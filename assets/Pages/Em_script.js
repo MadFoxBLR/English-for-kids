@@ -109,7 +109,7 @@ function sad() {
   
 function angry() {
     var audio = new Audio(); // Создаём новый элемент Audio
-    audio.src = ' /assets/sound/angry.mp3'; // Указываем путь к звуку "клика"
+    audio.src = ' ../sound/angry.mp3'; // Указываем путь к звуку "клика"
     audio.autoplay = true; // Автоматически запускаем
 }
 function happy() {
