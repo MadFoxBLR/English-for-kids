@@ -2,14 +2,14 @@
 let columns__container = document.querySelector('.columns__container');
 
 const bg = [
-    "background-image: url(/assets/img/Emotion/1.jpg)",
-    "background-image: url(/assets/img/Emotion/2.png)",
-    "background-image: url(/assets/img/Emotion/3.jpg)",
-    "background-image: url(/assets/img/Emotion/4.gif)",
-    "background-image: url(/assets/img/Emotion/5.gif)",
-    "background-image: url(/assets/img/Emotion/6.jpg)",
-    "background-image: url(/assets/img/Emotion/7.jpg)",
-    "background-image: url(/assets/img/Emotion/8.jpg)"
+    "background-image: url(../img/Emotion/1.jpg)",
+    "background-image: url(../img/Emotion/2.png)",
+    "background-image: url(../img/Emotion/3.jpg)",
+    "background-image: url(../img/Emotion/4.gif)",
+    "background-image: url(../img/Emotion/5.gif)",
+    "background-image: url(../img/Emotion/6.jpg)",
+    "background-image: url(../img/Emotion/7.jpg)",
+    "background-image: url(../img/Emotion/8.jpg)"
 ]
 
 
@@ -102,7 +102,7 @@ for (let i = 0; i <= 7; i++) {
 
 function sad() {
     var audio = new Audio(); // Создаём новый элемент Audio
-    audio.src = ' /assets/sound/sad.mp3'; // Указываем путь к звуку "клика"
+    audio.src = ' ../sound/sad.mp3'; // Указываем путь к звуку "клика"
     audio.autoplay = true; // Автоматически запускаем
     
 }
@@ -114,32 +114,32 @@ function angry() {
 }
 function happy() {
     var audio = new Audio(); // Создаём новый элемент Audio
-    audio.src = ' /assets/sound/happy.mp3'; // Указываем путь к звуку "клика"
+    audio.src = ' ../sound/happy.mp3'; // Указываем путь к звуку "клика"
     audio.autoplay = true; // Автоматически запускаем
 }
 function tired() {
     var audio = new Audio(); // Создаём новый элемент Audio
-    audio.src = ' /assets/sound/tired.mp3'; // Указываем путь к звуку "клика"
+    audio.src = ' ../sound/tired.mp3'; // Указываем путь к звуку "клика"
     audio.autoplay = true; // Автоматически запускаем
   }
   function surprised() {
     var audio = new Audio(); // Создаём новый элемент Audio
-    audio.src = ' /assets/sound/surprised.mp3'; // Указываем путь к звуку "клика"
+    audio.src = ' ../sound/surprised.mp3'; // Указываем путь к звуку "клика"
     audio.autoplay = true; // Автоматически запускаем
 }
 function scared() {
     var audio = new Audio(); // Создаём новый элемент Audio
-    audio.src = ' /assets/sound/scared.mp3'; // Указываем путь к звуку "клика"
+    audio.src = ' ../sound/scared.mp3'; // Указываем путь к звуку "клика"
     audio.autoplay = true; // Автоматически запускаем
 }
 function smile() {
     var audio = new Audio(); // Создаём новый элемент Audio
-    audio.src = ' /assets/sound/smile.mp3'; // Указываем путь к звуку "клика"
+    audio.src = ' ../sound/smile.mp3'; // Указываем путь к звуку "клика"
     audio.autoplay = true; // Автоматически запускаем
 }
 function laugh() {
     var audio = new Audio(); // Создаём новый элемент Audio
-    audio.src = ' /assets/sound/laugh.mp3'; // Указываем путь к звуку "клика"
+    audio.src = ' ../sound/laugh.mp3'; // Указываем путь к звуку "клика"
     audio.autoplay = true; // Автоматически запускаем
   }
 
