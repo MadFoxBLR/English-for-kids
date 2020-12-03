@@ -1,0 +1,120 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+*,*:before,*:after{
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+}
+:focus,:active{ outline: none;}
+a:focus,a:active{ outline: none;}
+
+nav,footer,header,aside {display: block;}
+
+html, body {
+font-family: 'Heebo', sans-serif;
+height: 100%;
+width: 100%;
+font-size: 100%;
+line-height: 1;
+font-size: 14px;
+-ms-text-size-adjust: 100%;
+-moz-text-size-adjust: 100%;
+-webkit-text-size-adjust: 100%;
+}
+
+input,button, textarea {font-family: inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding: 0; margin: 0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size: inherit; font-weight: 400;}
+/*____________________________________________________________*/
+
+
+h1 {
+    position: absolute;
+    color: rgb(7, 7, 7);
+    height: 800;
+    z-index: 100;
+    right: 0;
+    font-size: 29px;
+    padding: 7px;
+   
+}
+
+
+.wrapper {
+    
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.columns__container{
+    display: flex;
+    flex-wrap: wrap;
+    perspective: 1000px;
+  
+}
+
+
+.item {
+ 
+    width: calc(80% / 4);
+    /* width: 200px; */
+    height: 200px;
+    /* background: linear-gradient(to top, #f3ecae, #cbf142); */
+    border: 1px rgb(131, 131, 131) solid;
+    margin: 50px 20px;
+    cursor: pointer;
+    transition: box-shadow .5s linear;
+    position: relative; /*for btn*/
+    
+    background-size: contain;
+    background-repeat: no-repeat;  
+   
+    overflow: hidden;
+    
+}
+
+
+
+
+
+.item:hover{
+    /* background: linear-gradient(to bottom, #faf092, #d5f1702d); */
+    
+    transition: box-shadow .3s linear;
+    box-shadow: 12px 9px 16px 3px rgba(0,0,0,0.5);
+   
+}
+
+.item:hover .btn{
+    bottom: 0;
+    background-color: rgb(248, 112, 21);
+    transition: all .3s linear;
+   
+}
+
+
+.btn{
+    font-family: 'Sen', sans-serif;
+    position: absolute;
+    bottom: -27%;
+   font-size: 24px;
+    padding: 15px;
+    width: 100%;
+    background-color: rgba(83, 83, 83, 0.856);
+    transition: all .5s linear;
+}
+.btn:hover{
+    background-color: rgb(248, 112, 21);
+    transition: background-color .5s linear;
+}
