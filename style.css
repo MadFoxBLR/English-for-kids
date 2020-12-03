@@ -1,0 +1,237 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+*,*:before,*:after{
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+}
+:focus,:active{ outline: none;}
+a:focus,a:active{ outline: none;}
+
+nav,footer,header,aside {display: block;}
+
+html, body {
+height: 100%;
+width: 100%;
+font-size: 100%;
+line-height: 1;
+font-size: 14px;
+-ms-text-size-adjust: 100%;
+-moz-text-size-adjust: 100%;
+-webkit-text-size-adjust: 100%;
+}
+
+input,button, textarea {font-family: inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding: 0; margin: 0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size: inherit; font-weight: 400;}
+/*____________________________________________________________*/
+
+
+h1 {
+    position: absolute;
+    color: rgb(253, 253, 253);
+    height: 600;
+    z-index: 2;
+    bottom:  0;
+    font-size: 18px;
+    padding: 7px;
+}
+.header{
+   
+    width: 100%;
+    top: 0;
+    left: 0;
+     
+}
+
+.header__body {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    padding: 0 20px;
+    
+}
+
+.header__burger {
+    margin-top: 20px;
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    z-index: 4;
+    cursor: pointer;
+    position: fixed;
+}
+
+.header__burger span{
+    position: absolute;
+    background-color: #333;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    top: 9px;
+}
+ /* .header__burger:hover.header__burger::after{
+    transform: scaleX(-37deg); 
+}
+.header__burger:hover.header__burger span{
+    transform: skewY(37deg); 
+}  */
+
+
+
+.header__burger::before, 
+.header__burger::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+    left: 0;
+    
+}
+.header__burger::before{
+    top: 0;
+    
+}
+.header__burger::after{
+    bottom: 0;
+}
+
+
+.header__menu {
+    position: fixed;
+    left: -25%;
+    
+}
+.activ {
+    
+    top: 0;
+    left: 0;
+    width: 25%;
+    height: 100%;
+    background-color: #18b5a4;
+    transition:all .5s linear;
+    
+    
+}
+.lock__active{
+    transition:all .5s linear;
+    z-index: 3;
+    position: fixed;
+   left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+   background: rgba(143, 143, 143, 0.377);
+   
+}
+
+.header__list{
+    margin-top: 30%;  
+    height: 100%;
+}
+
+.header__list a{
+   display: flex;
+   justify-content: center;
+   padding: 15px 0;
+  
+}
+.header__list a:hover{
+    color: #fff;
+}
+.header__link {
+    color: rgb(5, 4, 0);
+    font-size: 24px;
+    text-transform: uppercase;
+}
+.switch-container {
+}
+.wrapper {
+    
+    max-width: 1200px;
+    margin: 0 auto;
+   
+}
+.columns__container{
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+   
+  
+}
+
+
+.item {
+ 
+    width: calc(80% / 4);
+    /* width: 200px; */
+    height: 200px;
+    /* background: linear-gradient(to top, #f3ecae, #cbf142); */
+    border: 1px rgb(131, 131, 131) solid;
+    margin: 50px 20px;
+    cursor: pointer;
+    transition: box-shadow .5s linear;
+    position: relative; /*for btn*/
+    
+    background-size: 80%;
+    background-repeat: no-repeat;    
+    overflow: hidden;
+    
+}
+
+.item img{
+    position: absolute;
+    width: 81%;
+    
+}
+
+
+
+.item:hover{
+    /* background: linear-gradient(to bottom, #faf092, #d5f1702d); */
+    
+    background-size: 80%;
+    background-repeat: no-repeat;  
+   
+   
+    transition: box-shadow .3s linear;
+    box-shadow: 12px 9px 16px 3px rgba(0,0,0,0.5);
+   
+}
+
+.item:hover .btn{
+    background-color: rgb(248, 112, 21);
+    transition: background-color .5s linear;
+   
+}
+
+
+.btn{
+    position: absolute;
+    bottom: 0;
+    margin-top: 55%;
+    padding: 15px;
+    width: 100%;
+    background-color: rgba(83, 83, 83, 0.856);
+    transition: background-color .5s linear;
+}
+.btn:hover{
+    background-color: rgb(248, 112, 21);
+    transition: background-color .5s linear;
+}
