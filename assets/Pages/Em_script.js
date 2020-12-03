@@ -143,4 +143,11 @@ function laugh() {
     audio.autoplay = true; // Автоматически запускаем
   }
 
-  
+  let burger = document.querySelector('.header__burger');
+let menu = document.querySelector('.header__menu'); 
+let lock = document.querySelector('.lock'); 
+    burger.onclick = function () {
+        menu.classList.toggle('activ');
+        lock.classList.toggle('lock__active');
+       
+}
